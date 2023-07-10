@@ -3,10 +3,10 @@
 -- 3) Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
 -- 4) Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 
--1 CREATE TABLE employee(
-   id INTEGER , name VARCHAR(50) , birthday DATE , email VARCHAR(100)) ;
+/*1*/ CREATE TABLE employee(
+      id INTEGER , name VARCHAR(50) , birthday DATE , email VARCHAR(100)) ;
    
--2 
+/*2*/ 
     insert into employee (id, name, birthday, email) values (1, 'Katusha', '2023-05-03', 'ktofanini0@wunderground.com');
     insert into employee (id, name, birthday, email) values (2, 'Yale', '2023-01-25', 'yjordin1@mac.com');
     insert into employee (id, name, birthday, email) values (3, 'Shandy', '2023-01-19', 'srymell2@narod.ru');
@@ -58,12 +58,12 @@
     insert into employee (id, name, birthday, email) values (49, 'Beau', '2022-11-04', 'bdelascy1c@redcross.org');
     insert into employee (id, name, birthday, email) values (50, 'Humfrid', '2023-05-03', 'hstivers1d@forbes.com');
     
-    -3 UPDATE employee
+   /*3*/ UPDATE employee
        SET name 'Yasin' WHERE name = 'Westley' , birthday '1999-09-16' WHERE email = 'wcostigan14@wordpress.com' , 
        email = 'ysn23yvz@gmail.com' WHERE name = 'Yasin';
        SET name 'Emine' WHERE name 'Minny' , birthday '2001-09-10' WHERE name 'Emine' ;
        
-    -4 DELETE FROM employee
+   /*4*/ DELETE FROM employee
        WHERE id IN ( 10 , 20 , 30 ) ;
        
        DELETE FROM employee
